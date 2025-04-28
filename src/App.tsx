@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import TooltipWithoutKey from "./components/TooltipWithoutKey";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <TooltipWithoutKey text="Hovering 1">
+        <span>Hover me 1</span>
+      </TooltipWithoutKey>
+      <TooltipWithoutKey text="Hovering 2">
+        <span>Hover me 2</span>
+      </TooltipWithoutKey>
+      <TooltipWithoutKey text="Hovering 3">
+        <span>Hover me 3</span>
+      </TooltipWithoutKey>
+      <TooltipWithoutKey text="Hovering 4">
+        <span>Hover me 4</span>
+      </TooltipWithoutKey>
+      <TooltipWithoutKey text="Hovering 5">
+        <span>Hover me 5</span>
+      </TooltipWithoutKey>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
